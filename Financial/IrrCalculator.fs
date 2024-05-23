@@ -2,7 +2,7 @@
 
 module IrrCalculator =
     let internal dcf cashFlow rate period =
-        cashFlow / (pown (1.0 + rate) period)
+        cashFlow / (pown (1m + rate) period)
 
     let internal npv cashFlows rate =
         cashFlows
@@ -13,9 +13,9 @@ module IrrCalculator =
     let rec irr cashFlows initialValue increment precision =
         let presentValue = npv cashFlows initialValue
 
-        if System.Math.Round(presentValue, 2) > 0 then
+        if System.Decimal.Round(presentValue, 2) > 0m then
             irr cashFlows (initialValue + increment) increment precision
         else if precision = 0 then
             initialValue
         else
-            irr cashFlows (initialValue - increment) (increment / 10.0) (precision - 1)
+            irr cashFlows (initialValue - increment) (increment / 10m) (precision - 1)
