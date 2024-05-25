@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="IrrCalculator.fs" />
+    <Compile Include="Dcf.fs" />
+    <Compile Include="Npv.fs" />
+    <Compile Include="Irr.fs" />
   </ItemGroup>
 
 </Project>
