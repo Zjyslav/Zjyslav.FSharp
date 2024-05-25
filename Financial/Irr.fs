@@ -2,7 +2,7 @@
 
 /// Internal Rate of Return
 module Irr =
-    /// <summary>Caluclates Internal Rate of Return by finding a discount rate for which NPV of cash flows = 0.</summary>
+    /// <summary>Calulates Internal Rate of Return by finding a discount rate for which NPV of cash flows = 0.</summary>
     /// <param name="cashFlows">Array with values of cash flows.
     /// First element is T0.</param>
     /// <param name="initialValue">The starting point of calculation.

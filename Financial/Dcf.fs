@@ -2,7 +2,7 @@ namespace Zjyslav.Fsharp.Financial
 
 /// Discounted Cash Flows
 module Dcf =
-    /// <summary>Calculates Discounted Cash Flow</summary>
+    /// <summary>Calculates Discounted Cash Flow.</summary>
     /// <param name="cashFlow">Value of cash flow</param>
     /// <param name="rate">Discount rate
     /// 0.01m = 1%</param>
